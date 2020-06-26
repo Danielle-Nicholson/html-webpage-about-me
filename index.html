@@ -3,7 +3,9 @@
 
     <head>
         <title>Home | Danielle Nicholson</title>
-        
+        <!-- Set the character set, so the browser knows which character set shoukd be loaded and valid for webpage-->
+        <meta charset="UTF-8">
+
         <!-- For modern responsive web develpoment:-->
         <meta name="viewport" content="width=device-width, intial-scale=1.0">
         
@@ -11,7 +13,16 @@
         <meta name="description" content="A website about D.Nicholson.">
         <meta name="author" content="D.Nicholson">
     
-    </head>
+    
+    <!-- Styles: -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    
+    <!-- Scripts: -->
+    <!-- defer attribute will cause this script to wait until the body is 
+        loaded before excecuted (important for DOM /element 
+        manipulation by scripts) -->
+    <script src="js/scripts.js" type="text/javascript" defer></script>
+</head>
     <body>
         <h1> Hi, Welcome to my page about me</h1>
         <h2> Navigation </h2>
@@ -29,6 +40,18 @@
             <li>PHP</li>
             <li>Graphic design</li>
         </ul>
+        <h2>My Fav Photo</h2>
+        <p> Beautiful mountains and hiker on a nice day, check it out below!</p>
+            <img src="img/hiker-mountains.jpg" alt="Mountain valley with hiker.">
+            <img src="" >
+        <figure>
+            <figcaption>
+               Photo credited to:
+               <a href="https://www.linkedin.com/learning/learning-c-sharp-3/welcome?u=2109516" target="_blank">
+            Bee Bop</a>
+            </figcaption>
+            </figure>
+        
     </body>
 
 
