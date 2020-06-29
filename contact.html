@@ -67,29 +67,29 @@
         -->
         <input id="name" name="name" type="text">
   
-        <!-- The br (break) element is used to create a line break, but it's usually better to do this with CSS once you know how. -->
-        <br />
-  
-        <label for="email">Please enter your email address:</label>
-        <input id="email" type="text">
-        <!-- Type of "password" is the same as "text" but it will star out the content. This will NOT hide the content in form submissions. -->
-        <label for="password">Please enter your password:</label>
-        <input id="password" name="password" type="password">
-  
-        <br />
-  
-        <label for="message">Please leave us a message:</label>
-        <textarea id="message"></textarea>
-        <textarea id="message" name="message"></textarea>
-  
-        <br />
-  
+        <!-- I've labeled this section with a paragraph because there is no singular element to tie a label to. -->
+      <p>Please select your relation:</p>
+      <!--
+        Radio button "groups" are determined by the "name" attribute. You cannot have multiple radio buttons selected within a group.
+        The "value" attribute will determine what data is sent under the "name" when the form is submitted.
+        Without a "value" attribute, it will send the data 'on'.
+        The "id" attribute here functions similarly to above, uniquely identifying one specific element.
+        By marking one radio button as "checked" we ensure that the form cannot be submitted (without HTML editting) with no button selected.
+      -->
+      <input id="coworker" name="relation" value="coworker" type="radio">
+      <label for="coworker">Co-Worker</label>
+      <input id="exstudent" name="relation" value="exstudent" type="radio">
+      <label for="exstudent">Ex-Student</label>
+      <input id="other" name="relation" value="other" type="radio" checked>
+      <label for="other">Other</label>
+
+      <br />
         <!-- 
           The submit button will submit the form to the "action" attribute in the form element.
           The text in the button can be determined by the "value" attribute.
         -->
         <input type="submit" value="Submit Me!">
-      </form>
+    </form>
      <footer>
             <h2>Footer</h2>
             <p> 
