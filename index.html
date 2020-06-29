@@ -46,6 +46,14 @@
             <li>PHP</li>
             <li>Graphic design</li>
         </ul>
+         <!-- Article is a semantic structuring element that implies that the inner content is a self-contained article and will 
+      make sense standing on its own. -->
+      <article>
+        <h2>My Favourite Pictures</h2>
+        <p>
+          Below are some of my favourite pictures.
+        </p>
+        <section>
         <h2>My Fav Photo</h2>
         <p> Beautiful mountains and hiker on a nice day, check it out below!</p>
             <img src="img/hiker-mountains.jpg" alt="Mountain valley with hiker.">
@@ -56,13 +64,29 @@
                <a href="https://www.linkedin.com/learning/learning-c-sharp-3/welcome?u=2109516" target="_blank">
             Bee Bop</a>
             </figcaption>
-            </figure>
-        <footer>
-            <h2>Footer</h2>
-            <p> 
-                &copy; Copyright 2020 TechCareers;
-                All Rights Reserved
-            </p>
-        </footer>
-    </body>
+        </figure>
+    </section>
+  </article>
+  <!-- Aside is used for content that is tangentially related to the article, but once again may not make full sense when taken out of context. -->
+  <aside>
+    <h2>Hobbies</h2>
+    <p>I also enjoy drawing and swimming!</p>
+  </aside>
+</main>
+<footer>
+  <h2>Footer</h2>
+  <p>Thanks for visiting my page!</p>
+  <!-- Div is a non-semantic block-level styling element. -->
+  <div>
+    <p>
+      <!-- Span is a non-semantic inline element. -->
+
+      <!-- In our index page, our copyright is inside of a div, meaning it does not satisfy "body>footer>p". Only a direct descendent of footer
+      will satisfy that selector. Therefore it is yellow.-->
+      &copy; Copyright 2020 <span>TECHCareers</span>;
+      All Rights Reserved
+    </p>
+  </div>
+</footer>
+</body>
 </html>

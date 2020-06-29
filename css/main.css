@@ -1,7 +1,10 @@
+/* 
+  Element Selectors: Selects every element on the page of matching name.
+*/
 body {
-    background-color: bisque;
-}
-header {
+    background-color: rgb(207, 167, 163);
+  }
+  header {
     background-color: red;
   }
   main {
@@ -11,13 +14,20 @@ header {
     background-color: cyan;
   }
   /* 
+    Direct Descendent Selectors: Selects every element on the page of the latter name that is a DIRECT child of the former name.
+  */
+  body>footer>p {
+    background-color: orange
+  }
+  /* 
     Descendent Selectors: Selects every element on the page of the latter name that is a child (somewhere) of the former name.
   */
-footer p {
-  background-color: yellow;
-}
-/* 
-  Direct Descendent Selectors: Selects every element on the page of the latter name that is a DIRECT child of the former name.
-*/
-footer>p {
-  background-color: orange}
+  footer p {
+    background-color: yellow;
+  }
+  /* 
+    Direct Descendent Selectors: Selects every element on the page of the latter name that is a DIRECT child of the former name.
+  */
+  footer>p {
+    background-color: orange
+  } 
