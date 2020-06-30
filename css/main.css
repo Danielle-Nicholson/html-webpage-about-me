@@ -2,28 +2,28 @@
   Element Selectors: Selects every element on the page of matching name.
 */
 body {
-    background-color: rgb(207, 167, 163);
+    background-color: rgb(250, 240, 239);
   }
   header {
-    background-color: red;
+    background-color: rgb(209, 185, 185);
   }
   main {
-    background-color: chartreuse;
+    background-color:rgb(250, 240, 239);
   }
   footer {
-    background-color: cyan;
+    background-color: rgb(179, 180, 180);
   }
   /* 
     Direct Descendent Selectors: Selects every element on the page of the latter name that is a DIRECT child of the former name.
   */
   body>footer>p {
-    background-color: orange
+    background-color: rgb(85, 83, 79)
   }
   /* 
     Descendent Selectors: Selects every element on the page of the latter name that is a child (somewhere) of the former name.
   */
   footer p {
-    background-color: yellow;
+    background-color: rgb(34, 35, 37);
   }
   /* 
     Direct Descendent Selectors: Selects every element on the page of the latter name that is a DIRECT child of the former name.
@@ -40,24 +40,45 @@ body {
   /* 
     ID Selectors: Are used to select the single element with the given ID. IDs have higher specificity than class selectors.
   */
+  .flex {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .magenta {
+    background-color: magenta;
+  
+    width: 250px;
+    height: 250px;
+  }
+  .orange {
+    background-color: orange;
+
+    width: 400px;
+    height: 300px;
+  }
+  .lime {
+    background-color: lime;
+
+    width: 250px;
+    height: 250px;
+  }
+  /* 
+    ID Selectors: Are used to select the single element with the given ID. IDs have higher specificity than class selectors.
+  */
   #turbines {
     border: 3px solid red;
     border-radius: 10px;
     width: 50%;
-  }
-  
-  main > p {
+  }main > p {
     font-size: 40px;
     color: rgb(255, 0, 0);
     font-weight: bolder;
     text-decoration: underline overline;
     font-style: italic;
-  }
-  
-  .contact main {
+  }.contact main {
     background-image: url("../img/rocky-mountains.jpg");
     background-size: cover;
   }
   .contact .mask {
     background-color: rgba(50, 50, 50, 0.5);
-  } 
+  }
